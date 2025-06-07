@@ -1,7 +1,8 @@
 streamlit==1.24.1
-numpy==1.23.5  # Downgraded to be compatible with TensorFlow
+numpy==1.25.2      # Latest compatible with TF 2.18
 opencv-python-headless==4.7.0.72
-tensorflow==2.12.0
+tensorflow==2.18.0
+keras==3.3.3
 pandas==2.2.3
 altair==4.2.2
-protobuf==3.20.3  # Upgraded to meet TensorFlow's minimum requirement
+protobuf==4.23.4   # Make sure this is upgraded for TF 2.18
