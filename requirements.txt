@@ -1,8 +1,5 @@
 streamlit==1.24.1
 numpy==1.24.3
-opencv-python==4.7.0.72
+opencv-python-headless==4.7.0.72
 tensorflow==2.13.0
 pandas==2.2.3
-tensorflow-estimator==2.13.0
-keras==2.13.1
-h5py==3.13.0
