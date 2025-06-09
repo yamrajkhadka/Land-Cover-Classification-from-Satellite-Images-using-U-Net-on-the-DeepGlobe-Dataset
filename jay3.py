@@ -83,7 +83,7 @@ if uploaded_file is not None:
     color_mask = decode_mask(pred_mask_resized)
 
     st.subheader("🎯 Predicted Segmentation Mask")
-    st.image(color_mask, use_container_width=True)
+    st.image(color_mask)
 
     overlay = cv2.addWeighted(cv2.cvtColor(img, cv2.COLOR_BGR2RGB), 0.6, color_mask, 0.4, 0)
     st.subheader("🌀 Overlay on Original")
