@@ -71,7 +71,7 @@ if uploaded_file is not None:
     img = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)
 
     st.subheader("🖼️ Original Image")
-    st.image(cv2.cvtColor(img, cv2.COLOR_BGR2RGB), use_container_width=True)
+    st.image(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 
     img_input = preprocess(img)
     img_input_exp = np.expand_dims(img_input, axis=0)
