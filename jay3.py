@@ -87,7 +87,7 @@ if uploaded_file is not None:
 
     overlay = cv2.addWeighted(cv2.cvtColor(img, cv2.COLOR_BGR2RGB), 0.6, color_mask, 0.4, 0)
     st.subheader("🌀 Overlay on Original")
-    st.image(overlay, use_container_width=True)
+    st.image(overlay)
 
     # Optional: Ground truth mask upload
     st.subheader("📊 Upload Ground Truth Mask (Optional for Accuracy)")
